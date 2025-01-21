@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<!--Navighatie balk voor de pagina's, let op we gebruiken url_for dit houdt de pagina dynamisch en is beter dan de html page hardcoden-->
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      <li><a href="{{ url_for('projects') }}">Projects</a></li>
+      <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+  </nav>
+    <!--About me een foto van mij en wat informatie over mij-->
+    <h1>About Me</h1>
+    <div class="center-img" ><!--div met img en centeren via css-->
+      <img src="/static/img/IMG_1918.png" height="400" class="img-fluid">
+    </div>
+    <div class="aboutme"><!--maak gebruik van brackets in text zodat het beter leesbaar is-->
+      <p>Mijn Naam is Taeke Hessel van Houten en ik ben een werktuigbouwkunde student aan het hbo NHL Stenden.<br /><br />Ik ben 23 jaar oud en heb inmiddels ervaring met 3d printing technieken, management in een team begeleiden en natuurlijk kennis in krachtberekeningen en andere onderdelen van natuurkunde. Wil je graag meer weten over projecten die ik heb gedaan kun je deze vinden in de projects pagina, zou je graag meer willen weten kun je contact opnemen via de mail alle desbetreffende informatie is te vinden op de contact pagina.</p>
+      <p class="aboutmetext">In de maak van deze website zit ik in mijn derde jaar van mijn studie en ik wil door middel van deze website delen wat ik allemaal heb gedaan tijdens mijn studie waaronder ook deze website voor het ontwikkelen van mijn programmeer skills.<br /> Op deze website wil ik eventuele recruiters voor stages of werkplekken laten zien wat ik waard ben, daarnaast is ieder natuurlijk welkom om een kijkje te nemen.</p>
+    </div>
+</body>
+</html>
